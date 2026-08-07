@@ -1,0 +1,5 @@
+Component: main
+Origin: Klivolks
+Label: kGate
+Architecture: arm64
+Description: kGate APT repository

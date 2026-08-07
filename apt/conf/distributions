@@ -1,0 +1,7 @@
+Origin: Klivolks
+Label: kGate
+Codename: stable
+Architectures: amd64 arm64
+Components: main
+Description: kGate APT repository
+SignWith: 4D3AE8F6091B7F7D9A1239780200907B855B5D88

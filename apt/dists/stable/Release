@@ -1,0 +1,28 @@
+Origin: Klivolks
+Label: kGate
+Codename: stable
+Date: Fri, 07 Aug 2026 21:41:51 UTC
+Architectures: amd64 arm64
+Components: main
+Description: kGate APT repository
+MD5Sum:
+ 0209e16a353e94ede2b9634f61c0d05f 476 main/binary-amd64/Packages
+ a63d8a785f478ba6651eb0b78d6e8522 357 main/binary-amd64/Packages.gz
+ eb3cd3915fdb6cb6e18fd1a7228847fc 100 main/binary-amd64/Release
+ b0ef053d4ced15d2a5c18617f12c2236 446 main/binary-arm64/Packages
+ 35d18ad05bb97eb0504172f9d256abe5 343 main/binary-arm64/Packages.gz
+ 18bad04ac3dfee70668163bc576e36d1 100 main/binary-arm64/Release
+SHA1:
+ fc99f8acf1a47f55903dc342d91812c75392421e 476 main/binary-amd64/Packages
+ d84ed1dccc5fb4ed8776ff5f428d66b30ba7d66a 357 main/binary-amd64/Packages.gz
+ b23845c71e84df777ff463b5240a9dcf59d2c734 100 main/binary-amd64/Release
+ bf1f7a3caf00ad21227e3ca279d2b22c96f97ac7 446 main/binary-arm64/Packages
+ 2945718c656a736f9d93e29c47c77519adde4624 343 main/binary-arm64/Packages.gz
+ 70c01c01b8ed8fd9406c5569d230c62326da7536 100 main/binary-arm64/Release
+SHA256:
+ 8993ef07b7e299a90b3e7dcb8c93c92e6c25d44024159abbe5ca5a0b6b14347e 476 main/binary-amd64/Packages
+ f47e57e17e1e3108521bf2dbd4fc09b79fab753258763460e3fc852cc824a8f7 357 main/binary-amd64/Packages.gz
+ fec8e20e03a8e62a88db2233c74e055fa21986e816b0e2fc3b1ef22d262221f9 100 main/binary-amd64/Release
+ 70f98948b1ad5f21c1b28d076dafd30256da3db17796ab85e1b534c41c820a60 446 main/binary-arm64/Packages
+ 7bc865b80b47eaa0bfaf201b874b659afdab6bf0fd8438fef1eb2663732aea29 343 main/binary-arm64/Packages.gz
+ 2606186b7aa3c4c782a73e205b8edf4d089427e18511c4a2fa87eae93bc2ebad 100 main/binary-arm64/Release
