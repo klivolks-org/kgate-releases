@@ -4,44 +4,44 @@ Hash: SHA512
 Origin: Klivolks
 Label: kGate
 Codename: stable
-Date: Sat, 08 Aug 2026 09:42:45 UTC
+Date: Sat, 08 Aug 2026 15:22:27 UTC
 Architectures: amd64 arm64
 Components: main
 Description: kGate APT repository
 MD5Sum:
- ce9d898a80544ced7cae4aced597a9e2 478 main/binary-amd64/Packages
- 05373b6df8d949bed27a1472acdafbd1 358 main/binary-amd64/Packages.gz
+ 9f9df735512297cf5b502de195d2db13 478 main/binary-amd64/Packages
+ 01faccff32ad8cb6c211018567f22ed9 358 main/binary-amd64/Packages.gz
  eb3cd3915fdb6cb6e18fd1a7228847fc 100 main/binary-amd64/Release
- b4c689b99c5eace924e345fb5d842f74 448 main/binary-arm64/Packages
- 70422756ad1e7e921ba920c7f85254a1 346 main/binary-arm64/Packages.gz
+ c1d1c0439d908ea4df3fa10295c7248b 448 main/binary-arm64/Packages
+ 93ae32faff7d8fc93b03b9dd36971418 342 main/binary-arm64/Packages.gz
  18bad04ac3dfee70668163bc576e36d1 100 main/binary-arm64/Release
 SHA1:
- 29b67aeacd66b5eb9b88d4a42ad7a262c3214efd 478 main/binary-amd64/Packages
- dd770ce156f9cd1e66d59d4e15090b60767383d8 358 main/binary-amd64/Packages.gz
+ 0566c60bf3867b831ebe1586b4c7a7caf376a919 478 main/binary-amd64/Packages
+ b458a36f3065be681ed90c8f51df663b694d8384 358 main/binary-amd64/Packages.gz
  b23845c71e84df777ff463b5240a9dcf59d2c734 100 main/binary-amd64/Release
- a941e5daa310e113ec1bad4c951c9d35966b64b7 448 main/binary-arm64/Packages
- f2e6fcac1154c27a33960331845a9a126fe98b7a 346 main/binary-arm64/Packages.gz
+ 28f4d74fed685d971010c64834a639f62818004d 448 main/binary-arm64/Packages
+ d7fbea518220d85c2117e41620ab128a630f5eab 342 main/binary-arm64/Packages.gz
  70c01c01b8ed8fd9406c5569d230c62326da7536 100 main/binary-arm64/Release
 SHA256:
- aaee45bde2043ef12d831e6e35f2bc6cbcf98cf3b51ffe892b9b3904527e220d 478 main/binary-amd64/Packages
- a73f1a80b31c21a97482e598db8d014a12fe563b36706d63b4a461a075f7babe 358 main/binary-amd64/Packages.gz
+ da257e0c3960fe1c420f6464d7cba50763e1c32061c3b1dcadcccc60c7bfb8db 478 main/binary-amd64/Packages
+ d1a66825c3c2e8ac0c8d229150084ead5bbb1ca18741f081cd0f3b8f769e5709 358 main/binary-amd64/Packages.gz
  fec8e20e03a8e62a88db2233c74e055fa21986e816b0e2fc3b1ef22d262221f9 100 main/binary-amd64/Release
- 088af9e1c7e0a598eb82da881ae2fbcf84a0755f0b8b79e8a3c3bbbb1c9fc0d9 448 main/binary-arm64/Packages
- 5216a74258e5c26d996d2723e3ec68452bbbcb17722b4b13eefd8f2aea432864 346 main/binary-arm64/Packages.gz
+ ac66bf59eacd1f294586fd2e4ccef00326136013cb01866cda5eacc2d9c345b5 448 main/binary-arm64/Packages
+ bbf229ca30cc4ad08d74cf2e8ad30bfa28230ca342040ff191c8b448387458a4 342 main/binary-arm64/Packages.gz
  2606186b7aa3c4c782a73e205b8edf4d089427e18511c4a2fa87eae93bc2ebad 100 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEETTro9gkbf32aEjl4AgCQe4VbXYgFAmp2+hYACgkQAgCQe4Vb
-XYj0VhAAuYf0Qx1OYUUQFniRdO/qVYTlztHl9dI312TIjAo9TEFZ3PUM1RS1Wo1Q
-iTDeK8gagU+bMtLWRtkD9aLHuoUxg6rVEbAm7sy22I/g1MHoNcFPGE1fkeiQhJjJ
-U9tjDWlYavr8fPXCzdalhHBKlszF4TdbpL/IU2BsLRzFD4dH/UEoEyOVEKwY/Fp2
-3QzFSVRGFQBlJJewv3eBd6nxGFnnCL8bHWZztYMfJ+LaU5puS5SNRGOo+L4m62/D
-95O9zcRcNrF5SsnErVBKtBehZS3Fwz6CLFj04pyXszvYPlemXHShdJbua3WvUET5
-m3/j6gt0DMfmmqQ+gF7y1QhX3v7heMMbZZCQOaog35CyvWMgsEhdMvGiEcvZ077h
-Ro7U4htsm5grftxiivu+UCKWlYgvxwn1Bj7uQn+2pyhjonn2Pe9lbabMbVFHrFU8
-+Vs3OqTOxaDO/9fiF1Ju/owpnFeWb1ZDu1C956xN5QUz141/k+jwgHRLNexb6vB5
-QRnqtLN4ISOs/k2EPnaS/e+BeINGRj/dME4dxXNCWm/j3ZrapMlNMDw3us+ok1r7
-4cUrtpXUk/YGWj6byQQzJp2JFMY/wv38XtZwuFxeak0GgE5x98u3Weasw2kmpWUp
-kISlwgikXZKOY0/XcmqN5Rao5U9Z2Nur8mm1EQ2QkP3AL22tS4s=
-=PgrR
+iQIzBAEBCgAdFiEETTro9gkbf32aEjl4AgCQe4VbXYgFAmp3SbQACgkQAgCQe4Vb
+XYh3zg/+JFLa59Rc89o03hZgTQQ8+P8q4WuIdHyRGzndZH4KIWfSoU3qzdmUQIhc
+K4HhsjdGhN9EbiBeEQa1zFmM49fxJCwihQwCdS4o5eeLPOc+bNUPb3Y+tDbuwk/7
+BGb16J/yDfojDELWAkYcuFCrE72CrIm0o1PlCpYDqxXgUGm06C4zWbGEas3Jc+sX
+ViQ3bNGwqho1HGixb//I98u6EqjG+BeCw6jpkdHzbjUfOsOJ27YtMNNEX34DUzHj
+fVxxAOZTXDbcRbcIZT/TYsSFmwr353aWyay0zLW+JStx//qBoyPcTXZBJ36aBDLP
+AKieKtmNyXdvbrc3iwhLHHLHyjAdN9kBV9GM3OPuwifWxxQ2vrSH2rSiuRvBDRCP
+xsCUbjr+B67yNyLotc3LA4MNvhhH/QQnJuaEoiBqOqgul8Vk8MqbegpdrX0hqVxZ
+wamV5CluhO1fw0z3nM4q4J4Xp3MFPaHxg4NObECs2xSRp46aHVG8YYOvt2uWZopg
+50aKqxsnVff6M7da2XDwBm+taH/mJWs0L3En+NtA3FiZNykH87ncHGY9Vui03mw1
+UMm9KREN0G/q2kRuO1HmWI/9ii6RpqJkggR7EAZUoFHGCAf+Btr3+mvcflIFFB52
+XoJ6CizME6Eo9H1jlOP55iSNj7tX7xnbb2TWCdoDhbg5rBCCmcM=
+=53kj
 -----END PGP SIGNATURE-----
