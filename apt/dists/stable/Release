@@ -1,28 +1,28 @@
 Origin: Klivolks
 Label: kGate
 Codename: stable
-Date: Fri, 07 Aug 2026 21:41:51 UTC
+Date: Sat, 08 Aug 2026 07:29:42 UTC
 Architectures: amd64 arm64
 Components: main
 Description: kGate APT repository
 MD5Sum:
- 0209e16a353e94ede2b9634f61c0d05f 476 main/binary-amd64/Packages
- a63d8a785f478ba6651eb0b78d6e8522 357 main/binary-amd64/Packages.gz
+ af96608b8a4d97deb9c4a3f5287eaaa1 478 main/binary-amd64/Packages
+ d7b6dfa1726c4fc828060e689281a923 357 main/binary-amd64/Packages.gz
  eb3cd3915fdb6cb6e18fd1a7228847fc 100 main/binary-amd64/Release
- b0ef053d4ced15d2a5c18617f12c2236 446 main/binary-arm64/Packages
- 35d18ad05bb97eb0504172f9d256abe5 343 main/binary-arm64/Packages.gz
+ d4f512b128b4c65818d8e153b04dc797 448 main/binary-arm64/Packages
+ 4bfb78777c792e39a72d2e58dce7249d 345 main/binary-arm64/Packages.gz
  18bad04ac3dfee70668163bc576e36d1 100 main/binary-arm64/Release
 SHA1:
- fc99f8acf1a47f55903dc342d91812c75392421e 476 main/binary-amd64/Packages
- d84ed1dccc5fb4ed8776ff5f428d66b30ba7d66a 357 main/binary-amd64/Packages.gz
+ 7d4ffa718d166dfbd6c79c4277374e3f02a72e30 478 main/binary-amd64/Packages
+ 702c5ce0f5b7d5223a5e0b59a40bb08843b542c1 357 main/binary-amd64/Packages.gz
  b23845c71e84df777ff463b5240a9dcf59d2c734 100 main/binary-amd64/Release
- bf1f7a3caf00ad21227e3ca279d2b22c96f97ac7 446 main/binary-arm64/Packages
- 2945718c656a736f9d93e29c47c77519adde4624 343 main/binary-arm64/Packages.gz
+ 56d7a71cdc1023114ae9b3dc34062d2d38bf0edf 448 main/binary-arm64/Packages
+ f403e12fe105f28be0ff5415a092c321a90c0422 345 main/binary-arm64/Packages.gz
  70c01c01b8ed8fd9406c5569d230c62326da7536 100 main/binary-arm64/Release
 SHA256:
- 8993ef07b7e299a90b3e7dcb8c93c92e6c25d44024159abbe5ca5a0b6b14347e 476 main/binary-amd64/Packages
- f47e57e17e1e3108521bf2dbd4fc09b79fab753258763460e3fc852cc824a8f7 357 main/binary-amd64/Packages.gz
+ 50d5accd006d7a73017abb1ff766d9574967c3b609ab4af0e030bbbc2088e30b 478 main/binary-amd64/Packages
+ e8d8752d1fcdeb7e001da7fd6a67328480f0dcf7c00fabc25a6a529fa2460324 357 main/binary-amd64/Packages.gz
  fec8e20e03a8e62a88db2233c74e055fa21986e816b0e2fc3b1ef22d262221f9 100 main/binary-amd64/Release
- 70f98948b1ad5f21c1b28d076dafd30256da3db17796ab85e1b534c41c820a60 446 main/binary-arm64/Packages
- 7bc865b80b47eaa0bfaf201b874b659afdab6bf0fd8438fef1eb2663732aea29 343 main/binary-arm64/Packages.gz
+ 91303b442630a2377b63b80b5430902154014e9dd522b76ef2a08c5257d1b477 448 main/binary-arm64/Packages
+ 77761220bba544763d947e1c9a4d244b008a151504735bd93c94812fd0c987f0 345 main/binary-arm64/Packages.gz
  2606186b7aa3c4c782a73e205b8edf4d089427e18511c4a2fa87eae93bc2ebad 100 main/binary-arm64/Release
