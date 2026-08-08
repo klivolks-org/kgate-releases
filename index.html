@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Install kGate</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="wrap topnav-inner">
+    <a class="brand" href="#top">
+      <span class="brand-mark"><i class="fa-solid fa-shield-halved"></i></span>
+      kGate
+    </a>
+    <div class="topnav-links">
+      <a href="#install">Install</a>
+      <a href="#platforms">Platforms</a>
+      <a href="#license">Licensing</a>
+    </div>
+    <a class="topnav-cta" href="#install">Get started</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="eyebrow"><span class="dot"></span> Self-hosted · runs anywhere, including offline</span>
+    <h1>Your API gateway,<br><em>running in under a minute.</em></h1>
+    <p>kGate is a self-hosted API Gateway and Messenger. One binary, your infrastructure, no dependency on our servers to keep running.</p>
+
+    <div class="installer" id="install">
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-target="docker" role="tab"><i class="fa-brands fa-docker"></i> Docker</button>
+        <button class="tab" data-target="apt" role="tab"><i class="fa-brands fa-ubuntu"></i> Ubuntu / Debian</button>
+        <button class="tab" data-target="yum" role="tab"><i class="fa-brands fa-redhat"></i> RHEL / Fedora</button>
+        <button class="tab" data-target="windows" role="tab"><i class="fa-brands fa-windows"></i> Windows</button>
+      </div>
+
+      <div class="term">
+
+        <div class="term-panel active" data-panel="docker">
+          <div class="term-label">Pull and run</div>
+          <div class="term-block">
+            <pre><span class="cmt"># pulls the image and starts kGate on port 8080</span>
+docker pull ghcr.io/klivolks-org/kgate:latest
+docker run -d --name kgate --restart=always \
+  -v kgate-data:/app/data \
+  -p 8080:8080 \
+  ghcr.io/klivolks-org/kgate:latest</pre>
+            <button class="copy-btn" data-copy="docker"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <p class="term-note">Then open <code>http://localhost:8080/install</code> to finish setup. kGate won't configure a reverse proxy for you — put nginx, Apache, or your platform's ingress in front of it for TLS.</p>
+        </div>
+
+        <div class="term-panel" data-panel="apt">
+          <div class="term-label">Add the repository, then install</div>
+          <div class="term-block">
+            <pre><span class="cmt"># adds kGate's signed apt repository</span>
+curl -fsSL https://klivolks-org.github.io/kgate-releases/kgate-archive-keyring.gpg.asc | sudo gpg --dearmor -o /usr/share/keyrings/kgate.gpg
+echo <span class="str">"deb [signed-by=/usr/share/keyrings/kgate.gpg] https://klivolks-org.github.io/kgate-releases/apt stable main"</span> | sudo tee /etc/apt/sources.list.d/kgate.list
+
+<span class="cmt"># installs and starts kGate</span>
+sudo apt-get update && sudo apt-get install kgate
+sudo systemctl enable --now kgate</pre>
+            <button class="copy-btn" data-copy="apt"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <p class="term-note">Future releases arrive through <code>apt-get upgrade</code>, same as any other package. Setup continues at <code>http://localhost:8080/install</code>.</p>
+        </div>
+
+        <div class="term-panel" data-panel="yum">
+          <div class="term-label">Add the repository, then install</div>
+          <div class="term-block">
+            <pre><span class="cmt"># adds kGate's signed yum repository</span>
+sudo tee /etc/yum.repos.d/kgate.repo &lt;&lt;EOF
+[kgate]
+name=kGate
+baseurl=https://klivolks-org.github.io/kgate-releases/yum
+enabled=1
+gpgcheck=1
+gpgkey=https://klivolks-org.github.io/kgate-releases/kgate-archive-keyring.gpg.asc
+EOF
+
+<span class="cmt"># installs and starts kGate</span>
+sudo dnf install kgate
+sudo systemctl enable --now kgate</pre>
+            <button class="copy-btn" data-copy="yum"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <p class="term-note">Works with <code>dnf</code> or <code>yum</code>. Setup continues at <code>http://localhost:8080/install</code>.</p>
+        </div>
+
+        <div class="term-panel" data-panel="windows">
+          <div class="term-label">Download and run the installer</div>
+          <div class="term-block">
+            <pre><span class="cmt">// download the latest installer, then run it as Administrator</span>
+kgate-setup.exe</pre>
+            <button class="copy-btn" data-copy="windows"><i class="fa-regular fa-copy"></i></button>
+          </div>
+          <p class="term-note">
+            <a href="https://github.com/klivolks-org/kgate-releases/releases/latest" style="color:#8FB0FF; text-decoration:underline;">Download kgate-setup.exe</a>
+            — it registers kGate as a Windows service and can optionally configure an IIS reverse-proxy site for you during setup.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="features">
+  <div class="wrap">
+    <div class="features-grid">
+      <div class="feature">
+        <div class="feature-icon blue"><i class="fa-solid fa-network-wired"></i></div>
+        <h3>Gateway</h3>
+        <p>Request routing, service registry, and referer-based access control for every API behind it.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon violet"><i class="fa-solid fa-comments"></i></div>
+        <h3>Messenger</h3>
+        <p>WebSocket pub/sub with delivery tracking and signed webhook fallback for offline subscribers.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon teal"><i class="fa-solid fa-lock"></i></div>
+        <h3>Runs offline</h3>
+        <p>No CDN dependencies, no phoning home to operate. Install it on an air-gapped network and it works.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="platforms">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">What happens after install</div>
+      <h2>Same four steps, every platform</h2>
+      <p>Package managers and installers differ, but every install lands you in the same setup wizard.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">01</div>
+        <h4>Choose components</h4>
+        <p>Run Gateway, Messenger, or both from the same install.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">02</div>
+        <h4>Pick a database</h4>
+        <p>MongoDB, MySQL, SQL Server, or the built-in embedded store — no external dependency required.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">03</div>
+        <h4>Create your admin account</h4>
+        <p>Only asked for on a fresh database — existing installs keep their existing accounts.</p>
+      </div>
+      <div class="step">
+        <div class="step-num">04</div>
+        <h4>Activate</h4>
+        <p>Start a 30-day trial, enter a license key, or request offline activation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="license">
+  <div class="wrap">
+    <div class="license-band">
+      <div class="ic"><i class="fa-solid fa-key"></i></div>
+      <div>
+        <h3>Licensing works offline too</h3>
+        <p>
+          Every license is a cryptographically signed token, verified locally — editing the license file can't extend it.
+          If your kGate instance has no internet access, its admin panel shows an <strong>Installation ID</strong> you can send us for a signed token you paste back in, with no network call required on your end.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>© 2018–2026 Klivolks</div>
+    <div class="footer-links">
+      <a href="https://klivolks.com">klivolks.com</a>
+      <a href="https://github.com/klivolks-org/kgate-releases/releases">Releases</a>
+      <a href="https://github.com/klivolks-org/kgate-releases">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const tabs = document.querySelectorAll('.tab');
+  const panels = document.querySelectorAll('.term-panel');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      panels.forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.querySelector(`.term-panel[data-panel="${tab.dataset.target}"]`).classList.add('active');
+    });
+  });
+
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const pre = btn.closest('.term-block').querySelector('pre');
+      const text = pre.innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        const icon = btn.querySelector('i');
+        icon.className = 'fa-solid fa-check';
+        setTimeout(() => { icon.className = 'fa-regular fa-copy'; }, 1400);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
