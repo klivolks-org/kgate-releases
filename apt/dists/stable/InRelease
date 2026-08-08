@@ -4,44 +4,44 @@ Hash: SHA512
 Origin: Klivolks
 Label: kGate
 Codename: stable
-Date: Sat, 08 Aug 2026 07:54:27 UTC
+Date: Sat, 08 Aug 2026 09:42:45 UTC
 Architectures: amd64 arm64
 Components: main
 Description: kGate APT repository
 MD5Sum:
- 35051d07b25da4c962d20b3f311cb081 478 main/binary-amd64/Packages
- 8f55d623405764260d22973832ae05bc 357 main/binary-amd64/Packages.gz
+ ce9d898a80544ced7cae4aced597a9e2 478 main/binary-amd64/Packages
+ 05373b6df8d949bed27a1472acdafbd1 358 main/binary-amd64/Packages.gz
  eb3cd3915fdb6cb6e18fd1a7228847fc 100 main/binary-amd64/Release
- c8ae14012a31f7eaac4f5e5c2cd662ee 448 main/binary-arm64/Packages
- 04df99e4a68cc24bf6025ed3298c175e 343 main/binary-arm64/Packages.gz
+ b4c689b99c5eace924e345fb5d842f74 448 main/binary-arm64/Packages
+ 70422756ad1e7e921ba920c7f85254a1 346 main/binary-arm64/Packages.gz
  18bad04ac3dfee70668163bc576e36d1 100 main/binary-arm64/Release
 SHA1:
- 381d0f4b9851bce9042430ca088b26a493719e2a 478 main/binary-amd64/Packages
- 4776f6df880467a8d0702d161b5070592cd0cc7f 357 main/binary-amd64/Packages.gz
+ 29b67aeacd66b5eb9b88d4a42ad7a262c3214efd 478 main/binary-amd64/Packages
+ dd770ce156f9cd1e66d59d4e15090b60767383d8 358 main/binary-amd64/Packages.gz
  b23845c71e84df777ff463b5240a9dcf59d2c734 100 main/binary-amd64/Release
- 4b2a267ed7fc389181e06daa1fd89b5b01f5d94e 448 main/binary-arm64/Packages
- 259794c76e7da73c8e8aa8be9ce80fa08dcef359 343 main/binary-arm64/Packages.gz
+ a941e5daa310e113ec1bad4c951c9d35966b64b7 448 main/binary-arm64/Packages
+ f2e6fcac1154c27a33960331845a9a126fe98b7a 346 main/binary-arm64/Packages.gz
  70c01c01b8ed8fd9406c5569d230c62326da7536 100 main/binary-arm64/Release
 SHA256:
- bc8194924da10c337eefebef70ce0050365ac86fed09aeaa30badee7f8d1b1f8 478 main/binary-amd64/Packages
- f1132ef95600973b19643c711ff5ea076122f2c92c40a036aa2e0d3f45157466 357 main/binary-amd64/Packages.gz
+ aaee45bde2043ef12d831e6e35f2bc6cbcf98cf3b51ffe892b9b3904527e220d 478 main/binary-amd64/Packages
+ a73f1a80b31c21a97482e598db8d014a12fe563b36706d63b4a461a075f7babe 358 main/binary-amd64/Packages.gz
  fec8e20e03a8e62a88db2233c74e055fa21986e816b0e2fc3b1ef22d262221f9 100 main/binary-amd64/Release
- 7426839967f983303515f93a7be32f84c9b399b77db5c1216ead9f235b490eff 448 main/binary-arm64/Packages
- 1b8d2ecda979a04fb7c78c75fbc2ae261edad609ee7ffc1e8686eb4971be8870 343 main/binary-arm64/Packages.gz
+ 088af9e1c7e0a598eb82da881ae2fbcf84a0755f0b8b79e8a3c3bbbb1c9fc0d9 448 main/binary-arm64/Packages
+ 5216a74258e5c26d996d2723e3ec68452bbbcb17722b4b13eefd8f2aea432864 346 main/binary-arm64/Packages.gz
  2606186b7aa3c4c782a73e205b8edf4d089427e18511c4a2fa87eae93bc2ebad 100 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEETTro9gkbf32aEjl4AgCQe4VbXYgFAmp24LMACgkQAgCQe4Vb
-XYhz9g//Xi7+owX9Uvfefy0/WQk1iDxGj+FbcRw/PKatG21P4gSZP72TdzXI9DKE
-iyAFDzOD2E1V02+/w8ow6kTQWy25zMiKy3Z9ps24hB9e+wTtZZlL17yPe46Jx9bk
-m+LwCUPPPBGAa1kvrwH0SsY+/uOLz0qRKk8aFYsa5N8oQIMbXGvE5TkQ3EJJNwom
-Ts6KHQiGoQPCsXjhxLFumg1L9lnnpFGiJlqVyxLZglqFSyWsVydko3r1gO6eO9ew
-n68NWIx4452HMwsEvIgyIfzHzHbtP6rM5ziSoOnP1m0o00e1ye4T+P9QW4KWPbAR
-FyxVm7w0lbKYrLIGs+UgHGxcPVmlIcz0AU0gx25/IetjWo1+YEmfrGfOH81HZIsJ
-b+x0+o1XRvhWKW9xMqu8Xb4+TRNwTir2wY2XUu3Vn/TQtOoYjPHOwisZjXMPM54C
-T8GsLDMy4uENOk9fiSY6iQt4Ezp3fCsyITsn/UM93SDsMGc9PqV8CvVYtAVHuWa2
-xZ0wD8c42gc6ZmHGTvvbl0XGBNRkv1vw4jQ6ACOhg5epLwyioKWEUQhJNNuBLvB3
-N9kVqlqUc20sagEIkv5lgHSQX8e1piqUwkG6seDg5Qd/dU0cT1HJ4jZLERVq2vSw
-0+PJ2PvV+hfaehecoiwB9J+4eP/VSNyZA6qAdd/YLfiu3aFX5hs=
-=jH6R
+iQIzBAEBCgAdFiEETTro9gkbf32aEjl4AgCQe4VbXYgFAmp2+hYACgkQAgCQe4Vb
+XYj0VhAAuYf0Qx1OYUUQFniRdO/qVYTlztHl9dI312TIjAo9TEFZ3PUM1RS1Wo1Q
+iTDeK8gagU+bMtLWRtkD9aLHuoUxg6rVEbAm7sy22I/g1MHoNcFPGE1fkeiQhJjJ
+U9tjDWlYavr8fPXCzdalhHBKlszF4TdbpL/IU2BsLRzFD4dH/UEoEyOVEKwY/Fp2
+3QzFSVRGFQBlJJewv3eBd6nxGFnnCL8bHWZztYMfJ+LaU5puS5SNRGOo+L4m62/D
+95O9zcRcNrF5SsnErVBKtBehZS3Fwz6CLFj04pyXszvYPlemXHShdJbua3WvUET5
+m3/j6gt0DMfmmqQ+gF7y1QhX3v7heMMbZZCQOaog35CyvWMgsEhdMvGiEcvZ077h
+Ro7U4htsm5grftxiivu+UCKWlYgvxwn1Bj7uQn+2pyhjonn2Pe9lbabMbVFHrFU8
++Vs3OqTOxaDO/9fiF1Ju/owpnFeWb1ZDu1C956xN5QUz141/k+jwgHRLNexb6vB5
+QRnqtLN4ISOs/k2EPnaS/e+BeINGRj/dME4dxXNCWm/j3ZrapMlNMDw3us+ok1r7
+4cUrtpXUk/YGWj6byQQzJp2JFMY/wv38XtZwuFxeak0GgE5x98u3Weasw2kmpWUp
+kISlwgikXZKOY0/XcmqN5Rao5U9Z2Nur8mm1EQ2QkP3AL22tS4s=
+=PgrR
 -----END PGP SIGNATURE-----
