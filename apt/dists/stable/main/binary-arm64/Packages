@@ -1,15 +1,15 @@
 Package: kgate
-Version: 3.2.17
+Version: 3.218.0
 Architecture: arm64
 Maintainer: Klivolks <support@klivolks.com>
 Installed-Size: 44482
 Homepage: https://klivolks.com
 Priority: optional
 Section: 
-Filename: pool/main/k/kgate/kgate_3.2.17_arm64.deb
-Size: 14764574
-SHA256: dcd951c14682335205f1abd0482fdd70230d0e679a3d13d75b95f0e7eb89e8cb
-SHA1: 86e9386bdd8f56bf307b43e64bfd34881f78c384
-MD5sum: 710c333dc4ba772bb3f993b1ec591e31
+Filename: pool/main/k/kgate/kgate_3.218.0_arm64.deb
+Size: 14764666
+SHA256: 763e67dc7f1f81490d33d3264d1fa3c8ece858bb74bd1373cd7133478a4002b5
+SHA1: d208065d1ba407ef19205793dd7dbba555e6ad23
+MD5sum: bd43269859e96182f47174bb66693b3f
 Description: kGate API Gateway & Messenger
 
