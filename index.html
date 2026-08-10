@@ -28,9 +28,16 @@
 
 <header class="hero" id="top">
   <div class="wrap">
-    <span class="eyebrow"><span class="dot"></span> Self-hosted · runs anywhere, including offline</span>
-    <h1>Your API gateway,<br><em>running in under a minute.</em></h1>
-    <p>kGate is a self-hosted API Gateway and Messenger. One binary, your infrastructure, no dependency on our servers to keep running.</p>
+    <div class="hero-top">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="dot"></span> Self-hosted · runs anywhere, including offline</span>
+        <h1>Your API gateway,<br><em>running in under a minute.</em></h1>
+        <p>kGate is a self-hosted API Gateway and Messenger. One binary, your infrastructure, no dependency on our servers to keep running.</p>
+      </div>
+      <div class="hero-shot">
+        <img src="assets/dashboard.png" alt="kGate admin dashboard showing API health, calls, and clients" width="1706" height="904" loading="eager">
+      </div>
+    </div>
 
     <div class="installer" id="install">
       <div class="tabs" role="tablist">
@@ -214,6 +221,29 @@ kgate-setup.exe</pre>
       });
     });
   });
+
+  (function () {
+    const wrap = document.querySelector('.hero-shot');
+    const img = wrap ? wrap.querySelector('img') : null;
+    if (!wrap || !img || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const range = 9; // % of travel each direction
+    let ticking = false;
+
+    function update() {
+      const hero = wrap.closest('.hero');
+      const rect = hero.getBoundingClientRect();
+      const progress = Math.min(Math.max(-rect.top / hero.offsetHeight, 0), 1);
+      img.style.transform = `translateY(${(progress - 0.5) * range * 2}%)`;
+      ticking = false;
+    }
+
+    window.addEventListener('scroll', () => {
+      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+    }, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
 </script>
 
 </body>
