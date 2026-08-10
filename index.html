@@ -222,28 +222,42 @@ kgate-setup.exe</pre>
     });
   });
 
-  (function () {
-    const wrap = document.querySelector('.hero-shot');
-    const img = wrap ? wrap.querySelector('img') : null;
-    if (!wrap || !img || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  // Hero image parallax: scroll drift + subtle pointer tilt.
+  const heroImg = document.querySelector('.hero-shot img');
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (heroImg && !reduceMotion) {
+    const heroEl = document.querySelector('.hero');
+    let scrollY = 0, tiltX = 0, tiltY = 0, ticking = false;
 
-    const range = 9; // % of travel each direction
-    let ticking = false;
-
-    function update() {
-      const hero = wrap.closest('.hero');
-      const rect = hero.getBoundingClientRect();
-      const progress = Math.min(Math.max(-rect.top / hero.offsetHeight, 0), 1);
-      img.style.transform = `translateY(${(progress - 0.5) * range * 2}%)`;
+    const render = () => {
+      heroImg.style.transform =
+        `translateY(${scrollY}px) rotateX(${tiltY}deg) rotateY(${tiltX}deg)`;
       ticking = false;
-    }
+    };
+    const schedule = () => {
+      if (!ticking) { requestAnimationFrame(render); ticking = true; }
+    };
 
     window.addEventListener('scroll', () => {
-      if (!ticking) { requestAnimationFrame(update); ticking = true; }
+      const rect = heroEl.getBoundingClientRect();
+      const past = Math.min(Math.max(-rect.top, 0), rect.height);
+      scrollY = past * 0.22;
+      schedule();
     }, { passive: true });
-    window.addEventListener('resize', update);
-    update();
-  })();
+
+    heroEl.addEventListener('mousemove', (e) => {
+      const rect = heroEl.getBoundingClientRect();
+      const px = (e.clientX - rect.left) / rect.width - 0.5;
+      const py = (e.clientY - rect.top) / rect.height - 0.5;
+      tiltX = px * 8;
+      tiltY = py * -8;
+      schedule();
+    });
+    heroEl.addEventListener('mouseleave', () => {
+      tiltX = 0; tiltY = 0;
+      schedule();
+    });
+  }
 </script>
 
 </body>
