@@ -4,7 +4,7 @@ Hash: SHA512
 Origin: Klivolks
 Label: kGate
 Codename: stable
-Date: Wed, 26 Aug 2026 10:51:34 UTC
+Date: Thu, 27 Aug 2026 12:32:47 UTC
 Architectures: amd64 arm64
 Components: main
 Description: kGate APT repository
@@ -31,17 +31,17 @@ SHA256:
  2606186b7aa3c4c782a73e205b8edf4d089427e18511c4a2fa87eae93bc2ebad 100 main/binary-arm64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEETTro9gkbf32aEjl4AgCQe4VbXYgFAmqOxTcACgkQAgCQe4Vb
-XYgNNQ/+NpA7zcG4Xr4PGDO235tClbPh0VBC96SyFm/qiLBXG6S+KL5CsP0WIL7a
-WCQXq/2ZrGDq8ctUvB+WwgrqvyUzkbw2HZ9r8u4kdffVz4n/TlBDA03pbguw6viF
-Hmz8VrCVDDntNbg1USTacekqbO0e/fBfuhtx9JhMjHY7YZkODQ2e/RgInyuz/3fT
-EZeM83tDGRKMTOi0oJwj+Bg+yD/yGLIySKtDFs++Cinu73sS1R3fAqGHv97j16nX
-mljKah+Rzs+IhYE86u5plQ1whnixgg40fx852LvoGQwV9JgUNvB8/j05QdW6QQsU
-6Hk0nbpyy2EcrefNlTBuP+UO0vqSdkVv642nCXzxay9pfDbGkozBKH7MgKELBJYG
-EGUFFZPpjMKTbTzEKI1F2k9UEOLQqPBiHbD2vwBXtnjiiwtq8s9pDNusvyEsIPog
-yCLH+98+/FSW0dt4t7jEIq1gf+ouy1Flif6K9f90dbCEmJQ+RKTdIwLq59XnaqlA
-v/jP0yRVWwI/LQYyuA87mnUBNZ0nvH941G9Jxjdew+qoPMaEbk//vnKEpgQf9RDj
-1wtZ1OTR30hIi1RgQyQee2ynp3KfksXxvhfUzUylJJuVgin5TIhU6MIbyMX1jIe3
-58uiytp7Mt3W+CoiJvTVc0KIpFpktbCnDzV3+pWHyw5LCsh9GNE=
-=So0c
+iQIzBAEBCgAdFiEETTro9gkbf32aEjl4AgCQe4VbXYgFAmqQLnAACgkQAgCQe4Vb
+XYiP+g/9HxBepN6Fvj/Lo9FGWeS/gKB3jDuf2WOxMaJygY7NfhKWK3yoZuMg6lQN
+BZ8rXk8dqWSuUySB4DJVyVr8Uxxo2psY/jFZ+D7KejTKbNeJjmdqQheQX8CftDQp
+wKoXIxmCkb6oYyMwNqXM3U15ScUF4xYK8SOFmBjoVR7e9hkVTm9t2edJkLzHhf7k
+B4z3CmioH1tcbpybuc+rxFY+A5l/+HJifnuEQdpO9zyw2yHjMnrJePImalgGeKvA
+ONu8lGvTqFmanhpE2n9D8f2Ej/4+q5RT+fbCaXfw+Gtv/IpUonYwxRjwgKb7XvZ8
+K/qMHuwTu7PDD8mCDC7puwShI/HUAcVfzcnFk6sMcLDIEX+04DGCNL+m/VyyvKY3
+SQRuejbn01m2GKnnb/9vbWKfklKy99w1uJYA4HC5othn7ifCDXAAygN7bBXWUJPl
+mjtJkbQStIhEI8Ud/NSke0KTS3N/rxRcRa+S8Zo6sOFRhMM4l/Ck+dwbDGqp5TV/
+Ik2Rr7z/kk5+INlesE1gPxrHiPnfb3cP4la+730mOjfEW87u9V4n10zqzdbT7Tfx
+qpfpemtHJgz+B7ysVIH2tt0dJoIRoMsKWR3fvDpULOiP/oiwGOOA9H9hQuGKrCMa
++iz7QH7+q8EIGh94Qe5HE/8i/UmS0CQlY85MdCLOWkPYcTqyQdc=
+=S0mr
 -----END PGP SIGNATURE-----
